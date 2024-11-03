@@ -1,0 +1,19 @@
+.cursor {
+    display: inline-block;
+    width: 5px; /* Width of the cursor */
+    height: 5px; /* Height of the cursor */
+    background-color: black; /* Color of the cursor */
+    margin-left: 12px; /* Space between text and cursor */
+    animation: blink 1s step-start infinite; /* Blinking effect */
+  }
+  @keyframes blink {
+    50% {
+        opacity: 0;
+    }
+  }
+  .fifth-line{
+    display: none ;
+  }
+  #newSection{
+    display: none ;
+  }
