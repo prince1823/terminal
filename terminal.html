@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Terminal</title>
     <link rel="stylesheet" href="terminal.css">
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
-
         }
 
         #myDiv {
@@ -17,7 +16,6 @@
         }
 
         #sp {
-
             display: flex;
             justify-content: center;
             color: whitesmoke;
@@ -28,26 +26,30 @@
         .main {
             background-color: rgb(7, 0, 0, 0.6);
             margin: 100px auto;
-
             height: 60vh;
             width: 80vw;
-            /* margin-top: 150px;
-             margin-left: 150px; 
-             margin-right: 150px;
-             margin-bottom: 150px;  */
             padding: 4px 4px 4px 4px;
-
         }
 
         body {
             background: linear-gradient(#1aae1f, #ed2b5f);
-            /* Adjust colors and direction as needed */
+            /* Add animation for background color */
+            animation: backgroundAnimation 10s infinite alternate;
             margin: 0;
-            /* height: 60vw;
-            width: 100vw; */
-            /* Ensure the body covers the full viewport height */
         }
 
+        /* Define the keyframes for the background animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(#1aae1f, #ed2b5f); /* Initial gradient */
+            }
+            50% {
+                background: linear-gradient(#ff7a00, #ff5e5e); /* Midway gradient */
+            }
+            100% {
+                background: linear-gradient(#2b55ff, #8f00ff); /* Final gradient */
+            }
+        }
 
         p {
             color: whitesmoke;
@@ -59,7 +61,6 @@
             border-radius: 20px;
             background-color: white;
             border: none;
-
         }
 
         .sec {
@@ -82,40 +83,35 @@
 
         .main2 {
             display: flex;
-
         }
 
         .zoom {
             transition: transform 1.5s ease-in-out;
             transform-origin: center;
         }
+
     </style>
 </head>
 
 <body class="zoom">
     <div class="main" id="myDiv">
-       
-            <div class="main2">
-                <div class="sec">
-                    <div class="circle" id="red"></div>
-                    <div class="circle" id="green"></div>
-                    <div class="circle" id="yellow"></div>
-                </div>
-                <div>
-                    <span id="sp">Prince@k's-HP2000:~/projects(bash)</span>
-                </div>
-
+        <div class="main2">
+            <div class="sec">
+                <div class="circle" id="red"></div>
+                <div class="circle" id="green"></div>
+                <div class="circle" id="yellow"></div>
             </div>
-            <div id="init">
+            <div>
+                <span id="sp">Prince@k's-MacBook M1:~/projects(bash)</span>
+            </div>
+        </div>
+        <div id="init">
             <div style="color:transparent;">
                 hddeuf
             </div>
-            <div>
-
-
-            </div>
+            <div></div>
             <div id="header">
-                <span style="color: rgb(170, 240, 64);">Prince@k's-HP2000 </span>
+                <span style="color: rgb(170, 240, 64);">Prince@k's-MacBook M1 </span>
                 <span style="color: rgb(253, 253, 51);">(main)</span>
                 <span style="color: red; border: 2px;"> ~> </span>
                 <span style="color: white;">cat ./about.txt(1.1.18)</span>
@@ -128,32 +124,23 @@
                     <span style="color: rgb(132, 245, 57); ">Prince@k's-MacBook M1</span>
                     <span style="color: rgb(247, 247, 68);">(main)</span>
                     <span style="color: red; border: 2px;"> ~> </span>
-                    Hi,You just stepped into Prince's public terminal .I am currently being built up.Once ready,I will
-                    walk
-                    you through the life of Prince.You will be able to ask me about his area of
-                    interests,hobbies,professional experiences , and much
-                    more.Currently,I am built to support desktop version.I'll be soon available on mobile.Pardon me for
-                    any
-                    inconvenience and you can always reach out to the
-                    developer(prince40saxena@gmail.com) for any queries or suggestions. As i continue to develop ,you
-                    can
-                    always checkout my current features.Looking forward to an amazing
-                    interaction.
-
+                    Hi, You just stepped into Prince's public terminal. I am currently being built up. Once ready, I will walk
+                    you through the life of Prince. You will be able to ask me about his area of interests, hobbies, professional experiences, and much
+                    more. Currently, I am built to support desktop version. I'll be soon available on mobile. Pardon me for
+                    any inconvenience and you can always reach out to the developer(prince40saxena@gmail.com) for any queries or suggestions. As I continue to develop, you can
+                    always check out my current features. Looking forward to an amazing interaction.
                     Thanks!!
                 </p>
             </div>
             <div class="forth-line">
-                <span style="color: rgb(172, 246, 54);">Prince@k's-HP2000 </span>
+                <span style="color: rgb(172, 246, 54);">Prince@k's-MacBook M1 </span>
                 <span style="color: rgb(244, 244, 76);">(main)</span>
                 <span style="color: red; border: 2px;"> ~> </span>
-                <span id="char_by_char" style="color: white;">To get started ; type help and press Enter!!</span>
-
+                <span id="char_by_char" style="color: white;">To get started; type help and press Enter!!</span>
             </div>
-            <div style="margin: 20px;"> </div>
+            <div style="margin: 20px;"></div>
             <div class="fifth-line">
-
-                <span style="color: rgb(172, 240, 71);">Prince@k's-HP2000</span>
+                <span style="color: rgb(172, 240, 71);">Prince@k's-MacBook M1</span>
                 <span style="color: rgb(252, 252, 90);">(main)</span>
                 <span style="color: red; border: 2px;"> ~> </span>
                 <span id="help" style="background-color: rgb(181, 135, 19);">help</span>
@@ -164,9 +151,6 @@
             <span>cmd</span>
         </div>
     </div>
-
-   
-
     <script src="terminal.js"></script>
 </body>
 
